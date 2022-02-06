@@ -1,0 +1,7 @@
+NO	             AD	          SOYAD	ODEV	VIZE	FINAL
+1	A	B	96	90	100
+2	A	B	96	90	100
+3	A	B	96	90	100
+4	A	B	96	90	100
+5	A	B	96	90	100
+     1	A	B	0

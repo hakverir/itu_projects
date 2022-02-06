@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(170,250)" to="(170,380)"/>
+    <wire from="(210,270)" to="(210,340)"/>
+    <wire from="(380,380)" to="(430,380)"/>
+    <wire from="(140,160)" to="(190,160)"/>
+    <wire from="(140,260)" to="(190,260)"/>
+    <wire from="(350,340)" to="(350,350)"/>
+    <wire from="(340,370)" to="(340,380)"/>
+    <wire from="(360,320)" to="(360,340)"/>
+    <wire from="(430,360)" to="(430,380)"/>
+    <wire from="(170,380)" to="(340,380)"/>
+    <wire from="(190,360)" to="(360,360)"/>
+    <wire from="(160,70)" to="(160,90)"/>
+    <wire from="(170,120)" to="(170,150)"/>
+    <wire from="(140,150)" to="(170,150)"/>
+    <wire from="(140,250)" to="(170,250)"/>
+    <wire from="(60,190)" to="(90,190)"/>
+    <wire from="(60,290)" to="(90,290)"/>
+    <wire from="(140,180)" to="(230,180)"/>
+    <wire from="(140,280)" to="(230,280)"/>
+    <wire from="(170,150)" to="(170,250)"/>
+    <wire from="(190,160)" to="(190,260)"/>
+    <wire from="(190,260)" to="(190,360)"/>
+    <wire from="(210,170)" to="(210,270)"/>
+    <wire from="(230,180)" to="(230,280)"/>
+    <wire from="(340,370)" to="(360,370)"/>
+    <wire from="(190,120)" to="(190,160)"/>
+    <wire from="(230,280)" to="(230,320)"/>
+    <wire from="(210,120)" to="(210,170)"/>
+    <wire from="(350,350)" to="(360,350)"/>
+    <wire from="(210,340)" to="(350,340)"/>
+    <wire from="(160,90)" to="(230,90)"/>
+    <wire from="(140,170)" to="(210,170)"/>
+    <wire from="(140,270)" to="(210,270)"/>
+    <wire from="(230,320)" to="(360,320)"/>
+    <wire from="(230,120)" to="(230,180)"/>
+    <comp lib="0" loc="(190,120)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="0" loc="(60,190)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(120,190)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(380,380)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="0" loc="(230,120)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="5" loc="(430,360)" name="Hex Digit Display"/>
+    <comp lib="0" loc="(60,290)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(170,120)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="1" loc="(120,190)" name="NOT Gate">
+      <a name="width" val="4"/>
+      <a name="label" val="Bus Driver #1"/>
+    </comp>
+    <comp lib="0" loc="(160,70)" name="Power"/>
+    <comp lib="0" loc="(120,290)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(210,120)" name="Pull Resistor">
+      <a name="pull" val="1"/>
+    </comp>
+    <comp lib="1" loc="(120,290)" name="NOT Gate">
+      <a name="width" val="4"/>
+      <a name="label" val="Bus Driver #2"/>
+    </comp>
+  </circuit>
+</project>
